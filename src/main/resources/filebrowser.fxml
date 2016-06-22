@@ -1,4 +1,20 @@
-<?import javafx.scene.layout.GridPane?>
-<GridPane fx:controller="de.eggi.filebrowser.gui.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.eggi.filebrowser.gui.Controller">
+    <BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0">
+        <top>
+            <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+                <Menu fx:id="file_menu" mnemonicParsing="false" text="File">
+                    <MenuItem fx:id="file_menu_item_close" mnemonicParsing="false" text="Close"
+                              onAction="#handleSubmitButtonAction"/>
+                </Menu>
+            </MenuBar>
+        </top>
+    </BorderPane>
+</AnchorPane>
