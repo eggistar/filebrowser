@@ -16,9 +16,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/filebrowser.fxml"));
+
         primaryStage.setTitle("filebrowser");
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/File-Explorer-256.png")));
         primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.getScene().getStylesheets().add(
+                getClass().getResource("/css/main.css").toExternalForm());
+
         primaryStage.show();
     }
 }
