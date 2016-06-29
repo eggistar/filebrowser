@@ -6,7 +6,7 @@
 
     <groupId>de.eggi.filebrowser</groupId>
     <artifactId>filebrowser</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <properties>
         <!-- The final name for the JAR that you can find in target directory-->
